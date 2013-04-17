@@ -1,0 +1,96 @@
+<f:layout name="Default" />
+
+This Template is responsible for displaying a single view for a domain object
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        Show.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+
+<f:flashMessages />
+
+<div class="ref_left">
+	
+		<div class="item projecttitle">
+			<h2>{references.title}</h2>
+			<a href="http://{references.url}" class="btn" target="_blank">Webseite öffnen</a>
+		</div>
+		
+		<div class="item projectSlides">
+			<f:image src="uploads/tx_references/dummy.gif" alt="" width="640" />
+			<f:if condition="{references.pic1}"><f:image src="uploads/tx_references/{references.pic1}" alt="" class="slideImg" /></f:if>
+			<f:if condition="{references.pic2}"><f:image src="uploads/tx_references/{references.pic2}" alt="" class="slideImg" /></f:if>
+			<f:if condition="{references.pic3}"><f:for each="{references.pics}" as="pic"><f:image src="uploads/tx_references/{pic}" alt="" class="slideImg" /></f:for></f:if>
+		</div><!-- 525c 395c -->
+		
+		<f:if condition="{references.customer}">
+			<h4>Kundenmeinung</h4>
+			<div class="box refKundenstimme">
+				<f:format.html>{references.customer}</f:format.html>
+			</div>
+		</f:if>
+		
+</div><!-- //ref_left -->
+
+<aside class="right">
+
+	<div class="item refPagination">
+		
+		<div class="prevNext btn-grey">
+			<f:if condition="{previousReference.0}">
+				<div class="prevRef" title="vorherige Referenz"><f:link.action action="show" arguments="{references:previousReference.0}"><span>&laquo;</span></f:link.action></div>
+			</f:if>					
+			<f:if condition="{nextReference.0}">
+				<div class="nextRef" title="nächste Referenz"><f:link.action action="show" arguments="{references:nextReference.0}"><span>&raquo;</span></f:link.action></div>
+			</f:if>
+		</div><!-- //prevNext -->
+		
+		<f:link.action action="list" class="btn-grey" style="float: right;">Übersicht</f:link.action>
+		
+		<div class="clearR"></div>
+		
+	</div>
+	
+	<div class="item" style="margin-bottom: 25px;">
+		<h4>Beschreibung</h4>
+		<f:format.html>{references.description}</f:format.html>
+	</div>
+	
+	<div class="item">
+		<h4>Aufgaben</h4>
+		<f:format.html>{references.services}</f:format.html>
+	</div>
+	
+</aside><!-- //right -->
+
+<div class="clearL"></div>
+
+<div class="greybox">
+	<h3>Wir designen und entwickeln Ihre Webseite. <a href="#">Interessiert?</a></h3>
+</div>
+
+
+</f:section>
+
+<!-- 
+
+	<f:if condition="{immobilien.baujahr}"><li><label>Baujahr:</label>{immobilien.baujahr}</li></f:if>
+	<f:link.action action="list" class="back">Zurück zur Übersicht</f:link.action>
+	<f:format.html>{immobilien.beschreibung}</f:format.html>
+	
+	<span>{references.title}</span>
+	<span>{references.url}</span>
+	<span>{references.description}</span>
+	<span>{references.pic1}</span>
+	<span>{references.pic2}</span>
+	<span>{references.pic3}</span>
+	<span>{references.services}</span>
+	<span>{references.customer}</span>
+	
+-->

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-02-05T08:26:54Z" product-name="references">
+		<header/>
+		<body>
+
+			<trans-unit id="title.description">
+				<source>Titel der Projekts</source>
+			</trans-unit>
+			<trans-unit id="url.description">
+				<source>Domain des Projekts</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>Beschreibung</source>
+			</trans-unit>
+			<trans-unit id="pic1.description">
+				<source>Screen 1</source>
+			</trans-unit>
+			<trans-unit id="pic2.description">
+				<source>Screen 2</source>
+			</trans-unit>
+			<trans-unit id="pic3.description">
+				<source>Screen 3</source>
+			</trans-unit>
+			<trans-unit id="services.description">
+				<source>Getätigte Aufgaben</source>
+			</trans-unit>
+			<trans-unit id="customer.description">
+				<source>Kundenmeinung</source>
+			</trans-unit>
+			<trans-unit id="categories.description">
+				<source>categories</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

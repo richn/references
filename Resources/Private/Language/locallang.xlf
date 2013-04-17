@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-02-05T08:26:54Z" product-name="references">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_references_domain_model_references">
+				<source>References</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_references.title">
+				<source>Titel der Projekts</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_references.url">
+				<source>Domain des Projekts</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_references.description">
+				<source>Beschreibung</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_references.pic1">
+				<source>Screen 1</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_references.pic2">
+				<source>Screen 2</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_references.pic3">
+				<source>Screen 3</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_references.services">
+				<source>Getätigte Aufgaben</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_references.customer">
+				<source>Kundenmeinung</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_references.categories">
+				<source>categories</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_references_domain_model_category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="tx_references_domain_model_category.title">
+				<source>title</source>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>
